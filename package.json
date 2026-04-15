@@ -1,0 +1,16 @@
+{
+  "name": "backend-lush",
+  "version": "1.0.0",
+  "description": "Learning the basics of graphql",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alejo2198/git@github.com:alejo2198/lush-backend-take-home.git"
+  },
+  "license": "ISC",
+  "author": "alejandro castro",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
