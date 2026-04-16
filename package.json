@@ -8,9 +8,26 @@
   },
   "license": "ISC",
   "author": "alejandro castro",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc --outDir dist --rootDir graphql",
+    "dev": "cross-env NODE_ENV=development tsx watch src/main.ts",
+    "start": "tsx src/main.ts"
+  },
+  "devDependencies": {
+    "@prisma/client": "6.0.1",
+    "@types/express": "^5.0.6",
+    "@types/node": "22.10.1",
+    "cross-env": "7.0.3",
+    "prisma": "6.0.1",
+    "tsx": "4.19.2",
+    "typescript": "5.7.2"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "graphql": "^16.10.0",
+    "graphql-http": "^1.22.4",
+    "graphql-yoga": "5.10.4"
   }
 }
